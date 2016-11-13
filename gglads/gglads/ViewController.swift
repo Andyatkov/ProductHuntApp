@@ -64,7 +64,7 @@ extension  MainViewController
         try? self.fetchResultsController.performFetch()
         self.download()
         
-        NSTimer.scheduledTimerWithTimeInterval(10.0, target: self, selector:  Selector("download"), userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(60.0, target: self, selector:  Selector("download"), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
